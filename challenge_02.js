@@ -27,13 +27,9 @@ ageDrink="Saft"; //Alter 6 bis 12
 ageDrink="Cola"; //Alter 13 bis 17
 ageDrink="Wein"; //18 + 
 
-
-console.log(personName);
-console.log(personAge);
-
 switch (ageDrink) {
     case "Milch":
-        console.log (personName + "ist " age + "Jahre alt und trinkt Milch"; )
+        console.log (personName + "ist " + personAge + "Jahre alt und trinkt Milch");
         break;
 
     default:
