@@ -16,3 +16,10 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+let ageName, firstName, ageDrink, agedrinks;
+
+firstName=prompt("insert your name here");
+ageName=Number(prompt("Insert your age here"));
+
+console.log(firstName);
+console.log(ageName);
