@@ -16,10 +16,26 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-let ageName, firstName, ageDrink, agedrinks;
+let personAge, personName;
 
-firstName=prompt("insert your name here");
-ageName=Number(prompt("Insert your age here"));
+personName=prompt("insert your name here");
+personAge=Number(prompt("Insert your age here"));
 
-console.log(firstName);
-console.log(ageName);
+let ageDrink;
+ageDrink="Milch"; //Alter 0 > And age < 6 
+ageDrink="Saft"; //Alter 6 bis 12 
+ageDrink="Cola"; //Alter 13 bis 17
+ageDrink="Wein"; //18 + 
+
+
+console.log(personName);
+console.log(personAge);
+
+switch (ageDrink) {
+    case "Milch":
+        console.log (personName + "ist " age + "Jahre alt und trinkt Milch"; )
+        break;
+
+    default:
+        break;
+}
