@@ -21,26 +21,27 @@ let personAge, personName;
 personName=prompt("insert your name here");
 personAge=Number(prompt("Insert your age here"));
 
-let ageMilk, ageSaft, ageCola, ageWein;
+let ageMilk, ageSaft, ageCola, ageWein, ageGrabstein;
  ageMilk=(personAge <6 && personAge >=0);
  ageSaft=(personAge <13 && personAge >=6);
  ageCola=(personAge <18 && personAge >=13);
- ageWein=(personAge >=18);
+ ageWein=(personAge >=18 && personAge <=112);
 
 // das Alter steht in Verbindung mit dem Getränk //
 switch (true) {
     case ageMilk: 
-        console.log(personName + " ist " + personAge +"Jahre alt und trinkt Milch");
+        console.log(personName +" ist " + personAge +" Jahre alt und trinkt Milch");
         break;
     case ageSaft: 
-        console.log(personName + " ist " + personAge +"Jahre alt und trinkt Saft");
+        console.log(personName +" ist " + personAge +" Jahre alt und trinkt Saft");
         break; 
     case ageCola: 
-        console.log(personName + " ist " + personAge +"Jahre alt und trinkt Cola");
+        console.log(personName +" ist " + personAge +" Jahre alt und trinkt Cola");
         break;
     case ageWein: 
-        console.log(personName + " ist " + personAge +"Jahre alt und trinkt Wein");
+        console.log(personName +" ist " + personAge +" Jahre alt und trinkt Wein");
         break;
     default:
+        console.log (personName +"  ist " + personAge + " du kriegst Wasser für die Blümchen!");
         break;
 }
