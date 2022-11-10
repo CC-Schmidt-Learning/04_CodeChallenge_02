@@ -24,14 +24,16 @@ personAge=Number(prompt("Insert your age here"));
 let ageDrink;
 ageDrink="Milch"; //Alter 0 > And age < 6 
 ageDrink="Saft"; //Alter 6 bis 12 
-ageDrink="Cola"; //Alter 13 bis 17
-ageDrink="Wein"; //18 + 
+//ageDrink="Cola"; //Alter 13 bis 17
+//ageDrink="Wein"; //18 + 
 
-switch (ageDrink) {
+switch (personAge) {
     case "Milch":
-        console.log (personName + "ist " + personAge + "Jahre alt und trinkt Milch");
+        console.log (personName + " ist " + personAge + "Jahre alt und trinkt" +ageDrink);
         break;
-
+    case "Saft":
+            console.log (personName + " ist " + personAge + "Jahre alt und trinkt Saft");
+            break;
     default:
         break;
 }
